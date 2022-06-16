@@ -89,4 +89,26 @@
         Me.Hide()
         Settings.Show()
     End Sub
+
+    Private Sub LinkLabel4_LinkClicked(sender As Object, e As LinkLabelLinkClickedEventArgs) Handles LinkLabel4.LinkClicked
+        Quiz.Show()
+        Me.Hide()
+    End Sub
+
+    Private Sub Button3_Click(sender As Object, e As EventArgs) Handles Button3.Click
+        MessageBox.Show("Succès Déverouillé !", "", MessageBoxButtons.OKCancel, MessageBoxIcon.Warning)
+        My.Computer.Audio.Play(My.Resources.success_rare, AudioPlayMode.Background)
+        NotifyIcon2.ShowBalloonTip(1000, "Quizzer", "C'est trop simple, le 'Quiz n°1' :)", ToolTipIcon.Info)
+    End Sub
+
+    Private Sub Button4_Click(sender As Object, e As EventArgs) Handles Button4.Click
+        Achivement8.Show()
+        Me.Hide()
+    End Sub
+
+    Private Sub Button5_Click(sender As Object, e As EventArgs) Handles Button5.Click
+        MessageBox.Show("Succès Déverouillé !", "", MessageBoxButtons.OKCancel, MessageBoxIcon.Warning)
+        My.Computer.Audio.Play(My.Resources.success_rare, AudioPlayMode.Background)
+        NotifyIcon2.ShowBalloonTip(1000, "Mais quoi ?", "Vous avez trouvé le 2ème succès caché ! Dites moi comment vous avez fait !", ToolTipIcon.Info)
+    End Sub
 End Class

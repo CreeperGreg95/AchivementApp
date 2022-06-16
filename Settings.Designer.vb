@@ -32,11 +32,12 @@ Partial Class Settings
         Me.Label5 = New System.Windows.Forms.Label()
         Me.Label6 = New System.Windows.Forms.Label()
         Me.LinkLabel1 = New System.Windows.Forms.LinkLabel()
-        Me.WebBrowser1 = New System.Windows.Forms.WebBrowser()
         Me.NotifyIcon1 = New System.Windows.Forms.NotifyIcon(Me.components)
         Me.NotifyIcon2 = New System.Windows.Forms.NotifyIcon(Me.components)
         Me.NotifyIcon3 = New System.Windows.Forms.NotifyIcon(Me.components)
         Me.Button2 = New System.Windows.Forms.Button()
+        Me.NotifyIcon4 = New System.Windows.Forms.NotifyIcon(Me.components)
+        Me.WebBrowser1 = New System.Windows.Forms.WebBrowser()
         Me.SuspendLayout()
         '
         'Button1
@@ -82,7 +83,7 @@ Partial Class Settings
         Me.Label4.Name = "Label4"
         Me.Label4.Size = New System.Drawing.Size(51, 17)
         Me.Label4.TabIndex = 4
-        Me.Label4.Text = "v.1.1.0"
+        Me.Label4.Text = "v.1.3.0"
         '
         'Label5
         '
@@ -91,7 +92,7 @@ Partial Class Settings
         Me.Label5.Name = "Label5"
         Me.Label5.Size = New System.Drawing.Size(142, 17)
         Me.Label5.TabIndex = 5
-        Me.Label5.Text = "28 mai 2022 à 14h10"
+        Me.Label5.Text = "16 juin 2022 à 21h17"
         '
         'Label6
         '
@@ -110,16 +111,7 @@ Partial Class Settings
         Me.LinkLabel1.Size = New System.Drawing.Size(430, 17)
         Me.LinkLabel1.TabIndex = 7
         Me.LinkLabel1.TabStop = True
-        Me.LinkLabel1.Text = "https://github.com/CreeperGreg95/AchivementApp/releases/v.1.1.0"
-        '
-        'WebBrowser1
-        '
-        Me.WebBrowser1.Location = New System.Drawing.Point(0, 176)
-        Me.WebBrowser1.MinimumSize = New System.Drawing.Size(20, 20)
-        Me.WebBrowser1.Name = "WebBrowser1"
-        Me.WebBrowser1.Size = New System.Drawing.Size(1016, 549)
-        Me.WebBrowser1.TabIndex = 8
-        Me.WebBrowser1.Url = New System.Uri("https://github.com/CreeperGreg95/AchivementApp/releases", System.UriKind.Absolute)
+        Me.LinkLabel1.Text = "https://github.com/CreeperGreg95/AchivementApp/releases/v.1.3.0"
         '
         'NotifyIcon1
         '
@@ -147,6 +139,21 @@ Partial Class Settings
         Me.Button2.TabIndex = 9
         Me.Button2.Text = "Regarder le Github"
         Me.Button2.UseVisualStyleBackColor = True
+        '
+        'NotifyIcon4
+        '
+        Me.NotifyIcon4.Icon = CType(resources.GetObject("NotifyIcon4.Icon"), System.Drawing.Icon)
+        Me.NotifyIcon4.Text = "NotifyIcon4"
+        Me.NotifyIcon4.Visible = True
+        '
+        'WebBrowser1
+        '
+        Me.WebBrowser1.Location = New System.Drawing.Point(0, 176)
+        Me.WebBrowser1.MinimumSize = New System.Drawing.Size(20, 20)
+        Me.WebBrowser1.Name = "WebBrowser1"
+        Me.WebBrowser1.Size = New System.Drawing.Size(1016, 549)
+        Me.WebBrowser1.TabIndex = 8
+        Me.WebBrowser1.Url = New System.Uri("https://github.com/CreeperGreg95/AchivementApp/releases", System.UriKind.Absolute)
         '
         'Settings
         '
@@ -183,4 +190,5 @@ Partial Class Settings
     Friend WithEvents NotifyIcon2 As NotifyIcon
     Friend WithEvents NotifyIcon3 As NotifyIcon
     Friend WithEvents Button2 As Button
+    Friend WithEvents NotifyIcon4 As NotifyIcon
 End Class

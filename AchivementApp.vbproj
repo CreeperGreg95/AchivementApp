@@ -29,7 +29,7 @@
     <PublisherName>L%27Univers des Jeux Vidéos, Inc.</PublisherName>
     <SuiteName>L%27Univers des Jeux Vidéos, Inc.</SuiteName>
     <ApplicationRevision>1</ApplicationRevision>
-    <ApplicationVersion>1.1.0.%2a</ApplicationVersion>
+    <ApplicationVersion>1.3.0.%2a</ApplicationVersion>
     <UseApplicationTrust>false</UseApplicationTrust>
     <CreateDesktopShortcut>true</CreateDesktopShortcut>
     <PublishWizardCompleted>true</PublishWizardCompleted>
@@ -123,6 +123,12 @@
     <Compile Include="Achivement6.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="Achivement8.Designer.vb">
+      <DependentUpon>Achivement8.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Achivement8.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="AchivementTab.vb">
       <SubType>Form</SubType>
     </Compile>
@@ -146,6 +152,18 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
+    <Compile Include="Quiz.Designer.vb">
+      <DependentUpon>Quiz.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Quiz.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Quiz2.Designer.vb">
+      <DependentUpon>Quiz2.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Quiz2.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Settings.Designer.vb">
       <DependentUpon>Settings.vb</DependentUpon>
     </Compile>
@@ -163,6 +181,9 @@
     <EmbeddedResource Include="Achivement6.resx">
       <DependentUpon>Achivement6.vb</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Achivement8.resx">
+      <DependentUpon>Achivement8.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="AchivementTab.resx">
       <DependentUpon>AchivementTab.vb</DependentUpon>
     </EmbeddedResource>
@@ -171,6 +192,12 @@
       <LastGenOutput>Resources.Designer.vb</LastGenOutput>
       <CustomToolNamespace>My.Resources</CustomToolNamespace>
       <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Quiz.resx">
+      <DependentUpon>Quiz.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Quiz2.resx">
+      <DependentUpon>Quiz2.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Settings.resx">
       <DependentUpon>Settings.vb</DependentUpon>

@@ -36,14 +36,16 @@ Partial Class AchivementTab
         Me.NotifyIcon4 = New System.Windows.Forms.NotifyIcon(Me.components)
         Me.Success4 = New System.Windows.Forms.Button()
         Me.LinkLabel2 = New System.Windows.Forms.LinkLabel()
-        Me.ErrorProvider1 = New System.Windows.Forms.ErrorProvider(Me.components)
         Me.CheckBox1 = New System.Windows.Forms.CheckBox()
         Me.Success5 = New System.Windows.Forms.Button()
         Me.Success6 = New System.Windows.Forms.Button()
         Me.LinkLabel3 = New System.Windows.Forms.LinkLabel()
         Me.SecretSuccess1 = New System.Windows.Forms.Button()
+        Me.Button3 = New System.Windows.Forms.Button()
+        Me.LinkLabel4 = New System.Windows.Forms.LinkLabel()
+        Me.Button4 = New System.Windows.Forms.Button()
         Me.Button2 = New System.Windows.Forms.Button()
-        CType(Me.ErrorProvider1, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.Button5 = New System.Windows.Forms.Button()
         Me.SuspendLayout()
         '
         'NotifyIcon1
@@ -150,10 +152,6 @@ Partial Class AchivementTab
         Me.LinkLabel2.TabStop = True
         Me.LinkLabel2.Text = "Obtenir le succès"
         '
-        'ErrorProvider1
-        '
-        Me.ErrorProvider1.ContainerControl = Me
-        '
         'CheckBox1
         '
         Me.CheckBox1.AutoSize = True
@@ -201,6 +199,35 @@ Partial Class AchivementTab
         Me.SecretSuccess1.TabIndex = 12
         Me.SecretSuccess1.UseVisualStyleBackColor = True
         '
+        'Button3
+        '
+        Me.Button3.Enabled = False
+        Me.Button3.Location = New System.Drawing.Point(1105, 37)
+        Me.Button3.Name = "Button3"
+        Me.Button3.Size = New System.Drawing.Size(122, 33)
+        Me.Button3.TabIndex = 14
+        Me.Button3.Text = "Succès n°7"
+        Me.Button3.UseVisualStyleBackColor = True
+        '
+        'LinkLabel4
+        '
+        Me.LinkLabel4.AutoSize = True
+        Me.LinkLabel4.Location = New System.Drawing.Point(1106, 15)
+        Me.LinkLabel4.Name = "LinkLabel4"
+        Me.LinkLabel4.Size = New System.Drawing.Size(117, 17)
+        Me.LinkLabel4.TabIndex = 15
+        Me.LinkLabel4.TabStop = True
+        Me.LinkLabel4.Text = "Accéder au quiz !"
+        '
+        'Button4
+        '
+        Me.Button4.Location = New System.Drawing.Point(1242, 16)
+        Me.Button4.Name = "Button4"
+        Me.Button4.Size = New System.Drawing.Size(100, 54)
+        Me.Button4.TabIndex = 16
+        Me.Button4.Text = "Succès n°8"
+        Me.Button4.UseVisualStyleBackColor = True
+        '
         'Button2
         '
         Me.Button2.BackgroundImage = Global.AchivementApp.My.Resources.Resources.settings_icon
@@ -212,11 +239,23 @@ Partial Class AchivementTab
         Me.Button2.TabIndex = 13
         Me.Button2.UseVisualStyleBackColor = True
         '
+        'Button5
+        '
+        Me.Button5.Location = New System.Drawing.Point(1479, 0)
+        Me.Button5.Name = "Button5"
+        Me.Button5.Size = New System.Drawing.Size(60, 19)
+        Me.Button5.TabIndex = 17
+        Me.Button5.UseVisualStyleBackColor = True
+        '
         'AchivementTab
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(1482, 546)
+        Me.Controls.Add(Me.Button5)
+        Me.Controls.Add(Me.Button4)
+        Me.Controls.Add(Me.LinkLabel4)
+        Me.Controls.Add(Me.Button3)
         Me.Controls.Add(Me.Button2)
         Me.Controls.Add(Me.SecretSuccess1)
         Me.Controls.Add(Me.LinkLabel3)
@@ -233,7 +272,6 @@ Partial Class AchivementTab
         Me.Controls.Add(Me.Success1)
         Me.Name = "AchivementTab"
         Me.Text = "Application Succès"
-        CType(Me.ErrorProvider1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -251,11 +289,14 @@ Partial Class AchivementTab
     Friend WithEvents NotifyIcon4 As NotifyIcon
     Friend WithEvents Success4 As Button
     Friend WithEvents LinkLabel2 As LinkLabel
-    Friend WithEvents ErrorProvider1 As ErrorProvider
     Friend WithEvents CheckBox1 As CheckBox
     Friend WithEvents Success5 As Button
     Friend WithEvents Success6 As Button
     Friend WithEvents LinkLabel3 As LinkLabel
     Friend WithEvents SecretSuccess1 As Button
     Friend WithEvents Button2 As Button
+    Friend WithEvents Button3 As Button
+    Friend WithEvents LinkLabel4 As LinkLabel
+    Friend WithEvents Button4 As Button
+    Friend WithEvents Button5 As Button
 End Class
